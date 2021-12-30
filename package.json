@@ -6,17 +6,25 @@
   "module": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "sasaki-katsuharu",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.16.5",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
     "@rollup/plugin-typescript": "^8.3.0",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/styled-components": "^5.1.19",
+    "babel-loader": "^8.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^2.62.0",
@@ -25,5 +33,6 @@
     "rollup-plugin-terser": "^7.0.2",
     "styled-components": "^5.3.3",
     "typescript": "^4.5.4"
-  }
+  },
+  "dependencies": {}
 }
